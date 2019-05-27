@@ -10,7 +10,7 @@ timezone:    PRC
 encoding: "utf-8"
 
 url: http://www.kongqigongying.com
-baseurl:  "/"
+baseurl:
 domain:    kongqigongying.com
 permalink:     /articles/:year/:month/:title.html
 paginate_path: 'page:num'
@@ -54,6 +54,22 @@ navs:
     label: Home
 
   -
+    href: /archive
+    label: Archive
+
+  -
+    href: /sorts
+    label: Sorts
+
+  -
+    href: /tags
+    label: Tags
+
+  -
+    href: /search
+    label: Search
+
+  -
     href: /open-source
     label: Open-Source
 
@@ -63,7 +79,7 @@ navs:
     target: _blank
 
   -
-    href: http://weibo.com/llyjyzj
+    href: http://weibo.com/kaelzhan
     label: Weibo
     target: _blank
 

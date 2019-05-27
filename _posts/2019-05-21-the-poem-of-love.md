@@ -2,7 +2,7 @@
 layout: post
 title: 爱的诗
 date: 2019-05-21
-categories: blog
+categories: 我的诗
 tags: [我的诗,爱情故事]
 description: 我的诗。
 ---

@@ -2,24 +2,24 @@
 layout: post
 title: Helm 安装
 date: 2019-05-19
-categories: blog
+categories: Devops
 tags: [Devops,K8S,Helm]
 description: K8S 的高效管理方式：Helm。
 ---
 
 # 目录
 
-* [1 Helm Client 安装](#1-helm-client-安装)
+* [1. Helm Client 安装](#1-helm-client-安装)
     * [1.1 Ubuntu安装helm](#11-ubuntu安装helm)
     * [1.2 其他Linux安装helm](#12-其他linux安装helm)
     * [1.3 MAC安装helm](#13-mac安装helm)
-* [2 Helm Tiller 安装](#2-helm-tiller-安装)
-* [3 Helm Tiller 自定义配置](#3-helm-tiller-自定义配置)
+* [2. Helm Tiller 安装](#2-helm-tiller-安装)
+* [3. Helm Tiller 自定义配置](#3-helm-tiller-自定义配置)
     * [3.1 修改tiller的deployment，指定节点和镜像](#31-修改tiller的deployment指定节点和镜像)
     * [3.2 修改tiller的svc，指定NodePort端口](#32-修改tiller的svc指定nodeport端口)
     * [3.3 通过指定Tiller启动参数修改配置](#33-通过指定tiller启动参数修改配置)
-* [4 Helm Tiller 删除](#4-helm-tiller-删除)
-* [5 Helm 常用命令](#5-helm-常用命令)
+* [4. Helm Tiller 删除](#4-helm-tiller-删除)
+* [5. Helm 常用命令](#5-helm-常用命令)
     * [5.1 Helm upgrade](#51-helm-upgrade)
     * [5.2 搜索，获取及解压Helm应用](#52-搜索获取及解压helm应用)
     * [5.3 调试生成Helm应用的详细信息，但不执行](#53-调试生成helm应用的详细信息但不执行)
@@ -31,7 +31,7 @@ description: K8S 的高效管理方式：Helm。
     * [5.9 其他命令](#59-其他命令)
 
 
-# 1 Helm Client 安装
+# 1. Helm Client 安装
 helm client主要作用如下：
 + 用来部署 Tiller server
 + 用来管理 Chart repository
@@ -42,7 +42,7 @@ helm client主要作用如下：
 ```
 sudo snap install helm --classic
 ```
-&nbsp;
+
 
 ### 1.2 其他Linux安装helm 
 
@@ -52,17 +52,16 @@ tar -zxvf helm-v2.9.1-linux-amd64.tar.gz
 cd linux-amd64
 mv helm /usr/local/bin/
 ```
-&nbsp;
+
 
 ### 1.3 MAC安装helm 
 
 ```
 brew install kubernetes-helm
 ```
-&nbsp;
 
 
-# 2 Helm Tiller 安装
+# 2. Helm Tiller 安装
 Helm Tiller是Helm的server，用来管理release。  
 
 Tiller有多种安装方式，比如本地安装或以pod形式部署到Kubernetes集群中。  
@@ -82,10 +81,9 @@ kubectl create serviceaccount --namespace kube-system tiller
 kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 helm init --service-account tiller
 ```
-&nbsp;
 
 
-# 3 Helm Tiller 自定义配置
+# 3. Helm Tiller 自定义配置
 
 ### 3.1 修改tiller的deployment，指定节点和镜像
 
@@ -101,7 +99,7 @@ kubectl edit deployment tiller-deploy -n kube-system
   - key: node-role.kubernetes.io/master
     effect: NoSchedule
 ```
-&nbsp;
+
 
 ### 3.2 修改tiller的svc，指定NodePort端口
 
@@ -115,7 +113,7 @@ kubectl edit svc tiller-deploy -n kube-system
     nodePort: 32134
   type: NodePort
 ```
-&nbsp;
+
 
 ### 3.3 通过指定Tiller启动参数修改配置
 
@@ -127,27 +125,25 @@ kubectl edit svc tiller-deploy -n kube-system
 ```
 helm init --tiller-image=daocloud.io/liukuan73/tiller-lk:v2.9.1 --tiller-namespace=kube-system
 ```
-&nbsp;
 
 
-# 4 Helm Tiller 删除 
+# 4. Helm Tiller 删除 
 由于 Tiller的数据存储于Kubernetes ConfigMap中，所以删除、升降级Tiller，原Helm部署的应用数据并不会丢失。 
 删除Tiller：
 
 ```
 helm reset
 ```
-&nbsp;
 
 
-# 5 Helm 常用命令
+# 5. Helm 常用命令
 
 ### 5.1 Helm upgrade
 
 ```
 helm init --upgrade
 ```
-&nbsp;
+
 
 ### 5.2 搜索，获取及解压Helm应用
 
@@ -156,14 +152,14 @@ helm search wordpress
 helm fetch stable/wordpress  ##获取tgz包
 helm fetch --untar stable/wordpress  ##获取并解压
 ```
-&nbsp;
+
 
 ### 5.3 调试生成Helm应用的详细信息，但不执行
 
 ```
 helm install --debug --dry-run ./aws-discovery
 ```
-&nbsp;
+
 
 ### 5.4 安装Helm应用
 
@@ -172,7 +168,7 @@ helm install --name nginx-ingress stable/nginx-ingress  ##指定名称安装
 helm install --name dashboard --namespace kube-system --set rbac.clusterAdminRole=true stable/kubernetes-dashboard  ##指定名称，namespace及其他参数
 helm install stable/wordpress --version 5.0.1  ##安装指定版本的应用
 ```
-&nbsp;
+
 
 ### 5.5 更改Helm安装的K8S resourse名称
 helm 安装的K8S resourse名称默认为 `realease-name+chart-name` , 需要更改可使用以下命令
@@ -180,7 +176,7 @@ helm 安装的K8S resourse名称默认为 `realease-name+chart-name` , 需要更
 ```
 helm upgrade dashboard stable/kubernetes-dashboard --set fullnameOverride="dashboard"
 ```
-&nbsp;
+
 
 ### 5.6 卸载Helm应用
 
@@ -188,7 +184,7 @@ helm upgrade dashboard stable/kubernetes-dashboard --set fullnameOverride="dashb
 helm delete ***  ##卸载后release name依然被占用，可使用 `helm ls --all` 查看到应用，并可使用 `helm rollback *** $version` 回退
 helm delete --purge ***  ##完全卸载，释放release name，且不可回退
 ```
-&nbsp;
+
 
 ### 5.7 升级及回退Helm应用
 
@@ -196,7 +192,7 @@ helm delete --purge ***  ##完全卸载，释放release name，且不可回退
 helm upgrade my-release -f mysql/values.yaml ./my-release  ##升级helm应用
 helm rollback my-release 1  ##1为版本号，可以添加 --debug打印调试信息
 ```
-&nbsp;
+
 
 ### 5.8 查看Helm应用信息
 
@@ -209,7 +205,7 @@ helm get my-release  ##显示安装的helm应用的详细yaml内容
 helm status my-release  ##显示安装的helm应用的包含的K8S resource及状态
 helm history my-release  ##查看helm应用的版本信息
 ```
-&nbsp;
+
 
 ### 5.9 其他命令
 

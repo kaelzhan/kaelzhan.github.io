@@ -1,0 +1,60 @@
+---
+layout: default
+menu: home
+class: home
+css: ['pages/index.css']
+---
+<section class="banner">
+    <div class="collection-head">
+        <div class="container">
+            <div class="collection-title">
+                <h1 class="collection-header">KongQiKongYing</h1>
+                <div class="collection-info">
+                    <span class="meta-info">
+                        <span class="octicon octicon-location"></span>
+                        China Shanghai
+                    </span>
+                    <span class="tooltipped tooltipped-s tooltipped-multiline meta-info" aria-label="Devops, Python, Docker, Kubernetes, Aliyun, AWS, Network">
+                        <span class="octicon octicon-code"></span>
+                        Devops Engineer
+                    </span>
+                    <span class="meta-info">
+                        <span class="octicon octicon-organization"></span>
+                        <a href="http://www.kongqigongying.com" target="_blank">KongQiGongYing</a>
+                    </span>
+                    <span class="meta-info last-updated">
+                        <span class="octicon octicon-mark-github"></span>
+                        <a href="https://github.com/kaelzhan" target="_blank">@kaelzhan</a>
+                    </span>
+                    <span class="tooltipped tooltipped-s tooltipped-multiline meta-info" aria-label="search:llyjyzj">
+                        <span class="octicon octicon-broadcast"></span>
+                        Wechat
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / .banner -->
+<section class="container content">
+    <div class="columns">
+        <div class="column three-fourths" >
+            <article class="article-content markdown-body">
+                {{ content }}
+            </article>
+            <div class="share">
+                {% include sns-share.html %}
+            </div>
+            <div class="comment">
+                {% include disqus-comments.html %}
+            </div>
+        </div>
+        <div class="column one-fourth">
+            {% include sidebar-before-ads.html %}
+            {% include sidebar-popular-repo.html %}
+            {% include sidebar-contribute-repo.html %}
+            {% include sidebar-after-ads.html %}
+        </div>
+    </div>
+</section>
+<!-- /section.content -->
