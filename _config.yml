@@ -1,0 +1,79 @@
+# Site settings
+title: KongQiGongYing - Kael Zhan 个人博客
+name: Kael Zhan
+email: kael.zhan@qq.com
+description: Kael Zhan, Devops工程师, 开源爱好者
+keywords: 溪尾擒龙道,Kael Zhan
+skill_keywords: [Linux, Git, Devops, Python, Docker, Kubernetes, Aliyun, AWS, VMware, TCP/IP, Network, F5]
+
+timezone:    PRC
+encoding: "utf-8"
+
+url: http://www.kongqigongying.com
+baseurl:  "/"
+domain:    kongqigongying.com
+permalink:     /articles/:year/:month/:title.html
+paginate_path: 'page:num'
+paginate:   10
+source_code: https://github.com/kaelzhan/kaelzhan.github.io
+
+# Build settings
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+gems:
+  - jemoji
+  - rouge
+  # # # - jekyll-mentions
+  # - jekyll-sitemap
+  - jekyll-html-pipeline
+  - jekyll-paginate
+
+disqus:
+  id:
+
+google:
+    analytics_id:
+
+# navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: https://github.com/kaelzhan
+    label: GitHub
+    target: _blank
+
+  -
+    href: http://weibo.com/llyjyzj
+    label: Weibo
+    target: _blank
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+popular_repos: ['K8S','docker-containers','jenkins-pipeline','helm-charts']
+contribute_repos: ['kaelzhan/kaelzhan.github.io']

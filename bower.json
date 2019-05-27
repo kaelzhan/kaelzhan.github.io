@@ -1,0 +1,30 @@
+{
+  "name": "kaelzhan.github.io",
+  "description": "Kael Zhan blog",
+  "main": "",
+  "authors": [
+    "Kael Zhan <kael.zhan@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kael",
+    "kongqigongying",
+    "blog"
+  ],
+  "homepage": "https://github.com/kaelzhan/kaelzhan.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "octicons": "*",
+    "primer-markdown": "*",
+    "primer-css": "~2.1.0",
+    "share.js": "overtrue-share.js#*",
+    "jquery": "~2.1.4"
+  }
+}
