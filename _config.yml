@@ -42,7 +42,7 @@ gems:
   - jekyll-paginate
 
 disqus:
-  id:
+  id: kongqigongying-com
 
 google:
     analytics_id:
