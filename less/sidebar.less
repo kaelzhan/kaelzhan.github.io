@@ -1,0 +1,66 @@
+@import "variables.less";
+
+// Sidebar Components
+
+// Large Screen
+@media (min-width: 1200px){
+    .post-container {
+        padding-left: 3%;
+    }
+    .sidebar-container{
+        padding-left: 1%;
+        padding-right: 8%;
+    }
+}
+@media (min-width: 768px){
+    .post-container {
+        padding-left: 3%;
+    }
+    .sidebar-container{
+        padding-left: 1%;
+        padding-right: 2%;
+    }
+}
+
+// Container of Sidebar, also Friends
+.sidebar-container{
+    color: @gray-l;
+    font-size: 14px;
+    h5{
+        color: @gray;
+        padding-bottom: 1em;
+        a{
+            color: @gray !important;
+            text-decoration: none;
+        }
+    }
+    a{
+        color: @gray-l !important;
+        &:hover, &:active{
+            color: @brand-primary !important;
+        }
+    }
+    .tags{
+        a{
+            border-color: @gray-l;
+            &:hover, &:active{
+                border-color: @brand-primary;
+            }
+        }
+    }
+    .short-about{
+        img{
+            width: 80%;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        .list-inline>li{
+            padding-left: 0px;
+        }
+    }
+}
