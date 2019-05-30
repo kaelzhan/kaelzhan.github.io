@@ -1865,7 +1865,7 @@ img::-moz-selection {
 }
 .repo-card:hover .repo-card-title {
   text-shadow: 0 0 8px #fffcfc;
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
 }
 .repo-card:hover .repo-card-body {
   opacity: 1;
@@ -1885,7 +1885,7 @@ img::-moz-selection {
   width: 100%;
   height: 100%;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
 }
@@ -1909,7 +1909,6 @@ img::-moz-selection {
   color: #fff;
   text-align: center;
   -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .repo-card-image {
@@ -1918,8 +1917,7 @@ img::-moz-selection {
   width: 100.5%;
   height: 100px;
   margin: -1px;
-  background: url(/assets/images/octicons-bg.png) center #555555;
-  -webkit-box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #555555 url(/img/repo/octicons-bg.png) center repeat;
   box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.1);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -1939,4 +1937,166 @@ img::-moz-selection {
 .repo-card-meta .last-updated {
   float: right;
   margin-right: 0;
+}
+.mini-repo-list {
+  list-style: none;
+}
+.mini-repo-list > li:first-child .mini-repo-list-item {
+  border-top: 0;
+}
+.mini-repo-list > li:last-child .mini-repo-list-item {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.mini-repo-list .no-repo {
+  padding: 15px;
+  color: #999;
+  text-align: center;
+}
+.mini-repo-list .repo-name {
+  font-weight: bold;
+}
+.mini-repo-list-item {
+  position: relative;
+  display: block;
+  padding: 6px 64px 6px 30px;
+  font-size: 14px;
+  border-top: 1px solid #e5e5e5;
+}
+.mini-repo-list-item.nostars {
+  padding: 6px 6px 6px 30px;
+}
+.mini-repo-list-item:hover {
+  text-decoration: none;
+}
+.mini-repo-list-item:hover .repo,
+.mini-repo-list-item:hover .owner {
+  text-decoration: underline;
+}
+.mini-repo-list-item .repo-icon {
+  float: left;
+  margin-top: 2px;
+  margin-left: -20px;
+  color: #666666;
+}
+.mini-repo-list-item .repo-and-owner.css-truncate-target,
+.mini-repo-list-item .owner.css-truncate-target {
+  max-width: 95%;
+}
+.mini-repo-list-item .owner {
+  max-width: 95%;
+}
+.mini-repo-list-item .repo {
+  font-weight: bold;
+}
+.mini-repo-list-item .stars {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #888888;
+}
+.mini-repo-list-item .repo-description {
+  display: block;
+  max-width: 100%;
+  font-size: 12px;
+  color: #777;
+  line-height: 21px;
+}
+.repo-list {
+  position: relative;
+  padding-left: 0;
+}
+.repo-list .participation-graph {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.repo-list .participation-graph.disabled {
+  display: none;
+}
+.repo-list .participation-graph .bars {
+  position: absolute;
+  bottom: 0;
+}
+.repo-list-item {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  list-style: none;
+  border-bottom: 1px solid #eeeeee;
+}
+.repo-list-name {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.repo-list-name:hover {
+  text-decoration: none;
+  color: #4169E1;
+}
+.repo-list-name .prefix,
+.repo-list-name .slash {
+  font-weight: normal;
+}
+.repo-list-name .slash {
+  margin-right: -4px;
+  margin-left: -4px;
+}
+.repo-list-description {
+  max-width: 550px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666666;
+}
+.repo-list-stats {
+  margin-top: 6px;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: #888888;
+}
+.repo-list-stats .repo-list-stat-item {
+  margin-left: 8px;
+  display: inline-block;
+  color: #888;
+  text-decoration: none;
+}
+.repo-list-stats .repo-list-stat-item:hover {
+  color: #4183c4;
+}
+.repo-list-stats .repo-list-stat-item > .octicon {
+  font-size: 14px;
+}
+.repo-list-info {
+  display: inline-block;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #888;
+  vertical-align: middle;
+}
+.repo-list-info .octicon {
+  margin-top: -3px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.repo-list-meta {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #888888;
+}
+.repo-list-meta .avatar {
+  margin-top: -2px;
+}
+.repo-list-meta a:hover {
+  text-decoration: none;
 }
