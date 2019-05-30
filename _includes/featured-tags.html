@@ -10,6 +10,9 @@
 </script>
 
 <section>
+    {% if include.bottom %}
+    <hr class="hidden-sm hidden-xs">
+    {% endif %}
     <div class="boxed-group flush" role="navigation">
         <h5><a href="{{'/search/?q=' | prepend: site.baseurl }}">SEARCH SITE CONTENT</a></h5>
         <ul class="boxed-group-inner search-form" style="padding-inline-start: 0px;">
@@ -45,6 +48,9 @@
 {% endif %}
 
 <section>
+    {% if include.bottom %}
+    <hr class="hidden-sm hidden-xs">
+    {% endif %}
     <h5>PUBLIC REPOSITORIES</h5>
     {% assign repos = site.github.public_repositories | reverse%}
     {% for repo in repos %}
