@@ -1,0 +1,25 @@
+{
+  "name": "kaelzhan.github.io",
+  "description": "Kael Blog",
+  "main": "",
+  "authors": [
+    "Kael Zhan <kael.zhan@qq.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kaelzhan",
+    "blog"
+  ],
+  "homepage": "https://github.com/kaelzhan/kaelzhan.github.io",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "octicons": "*"
+  }
+}

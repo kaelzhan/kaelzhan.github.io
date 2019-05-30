@@ -1,14 +1,19 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
-    "version": "1.7.0",
-    "homepage": "http://huxpro.github.io",
+    "name": "kael-blog",
+    "title": "Kael Blog",
+    "author": "Kael Zhan <kael.zhan@qq.com>",
+    "version": "0.8.0",
+    "homepage": "http://www.kongqigongying.com",
+    "license": "MIT",
+    "keywords": [
+        "kaelzhan",
+        "blog"
+    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://github.com/kaelzhan/kaelzhan.github.io"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://github.com/kaelzhan/kaelzhan.github.io/issues",
     "devDependencies": {
         "grunt": "^0.4.5",
         "grunt-banner": "^0.2.3",
@@ -26,6 +31,8 @@
         "cafe": "git co gitcafe-pages; git merge master; git push gitcafe gitcafe-pages:gitcafe-pages --tag; git co master;"
     },
     "dependencies": {
-        "grunt-contrib-cssmin": "^3.0.0"
+        "bower": "^1.8.8",
+        "grunt-contrib-cssmin": "^3.0.0",
+        "octicons": "^8.5.0"
     }
 }
