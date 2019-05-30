@@ -3,7 +3,7 @@ layout: post
 title: 爱的诗
 subtitle: "The poem of Love."
 author: "kaelzhan"
-header-img: "img/post-bg-lovestory.jpg"
+header-img: "img/post/default/post-bg-lovestory.jpg"
 header-mask: 0.3
 mathjax: false
 date: 2019-05-21

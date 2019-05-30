@@ -3,7 +3,7 @@ layout: post
 title: Markdown 代码块与语法高亮
 subtitle: "Markdown code block and Syntax highlighting."
 author: "kaelzhan"
-header-img: "img/post-bg-microservice.jpg"
+header-img: "img/post/default/post-bg-microservice.jpg"
 date: 2019-05-23
 categories: 写作
 tags: [写作,Program,Markdown]

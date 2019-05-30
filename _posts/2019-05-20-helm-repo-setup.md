@@ -3,7 +3,7 @@ layout: post
 title: 本地Helm Charts repo服务器搭建
 subtitle: "To setup a local Helm Charts repo server."
 author: "kaelzhan"
-header-img: "img/post-bg-helm.jpg"
+header-img: "img/post/default/post-bg-helm.jpg"
 header-mask: 0.3
 mathjax: true
 date: 2019-05-20

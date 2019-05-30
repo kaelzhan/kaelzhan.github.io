@@ -1,8 +1,8 @@
 # Site settings
 title: KongQiGongYing
 SEOTitle: KongQiGongYing | Kael Zhan
-header-img: img/home-bg.jpg
-post-img: img/post-bg-default.jpg
+header-img: img/home/home-bg.jpg
+post-img: img/home/bg-night.jpg
 email: kael.zhan@qq.com
 description: "关于语言的艺术——编程与诗歌 | 詹华（Kael Zhan），DevOps & Poem Lover"
 skill_keywords: [Linux, Git, Devops, Python, Docker, Kubernetes, Aliyun, AWS, VMware, TCP/IP, Network, F5]
@@ -89,13 +89,13 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "热的花火，向死而生"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/root/root.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
 
 
 

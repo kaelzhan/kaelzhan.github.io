@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "Example Post"
-subtitle:   "不适合人类阅读，非常水的自我笔记"
+title:      "Unix/Linux 扫盲笔记"
+subtitle:   "Unix/Linux induction notes"
 date:       2015-04-14
-author:     "Hux"
-header-img: "img/post-bg-unix-linux.jpg"
+author:     "kaelzhan"
+header-img: "img/post/default/post-bg-unix-linux.jpg"
 tags:
     - OS
     - Unix

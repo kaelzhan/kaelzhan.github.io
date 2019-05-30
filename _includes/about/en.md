@@ -34,6 +34,6 @@ Male &emsp; The post-90s &emsp; Lifelong Learners &emsp; Continue to pay attenti
 If the content helps you, buy me a cup of coffee to help me continue to share it (＾－＾)
 
 
-<div align="left"><img src="/img/kaelzanshang.png" /></div>
+<div align="left"><img src="/img/root/kaelzanshang.png" /></div>
 
 

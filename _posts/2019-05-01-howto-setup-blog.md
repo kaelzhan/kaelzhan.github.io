@@ -3,7 +3,7 @@ layout: post
 title: 如何搭建独立博客——简明GitHub Pages与Jekyll教程
 subtitle: "How to setup a blog——concise operation manual of GitHub Pages and Jekyll."
 author: "kaelzhan"
-header-img: "img/post-bg-2019.jpg"
+header-img: "img/home/bg-2019.jpg"
 header-mask: 0.3
 mathjax: true
 date: 2019-05-01
