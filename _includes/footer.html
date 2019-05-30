@@ -249,6 +249,17 @@
     }
 </script>
 
+<script src="/js/geopattern.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        // geopattern
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+        // hljs.initHighlightingOnLoad();
+    });
+</script>
+
 
 <!-- Multi-Lingual -->
 {% if page.multilingual %}
