@@ -1,4 +1,5 @@
 # Site settings
+name: Kael Blog
 title: KongQiGongYing
 SEOTitle: KongQiGongYing | Kael Zhan
 header-img: img/home/home-bg.jpg
@@ -9,6 +10,7 @@ skill_keywords: [Linux, Git, Devops, Python, Docker, Kubernetes, Aliyun, AWS, VM
 keyword: "KongQiGongYing, AirSupply, 空气供应, 詹华, Kael, kaelzhan, DevOps, Poem, 诗歌, 詹华的博客, Kael Blog, 博客, 个人网站, 互联网, Web, IT"
 url: "https://www.kongqigongying.com"             # your host, for absolute URL
 baseurl: ""                                       # for example, '/blog' if your blog hosted on 'host/blog'
+source_code: https://github.com/kaelzhan/kaelzhan.github.io
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -144,3 +146,6 @@ friends: [
         href: "http://xieminis.me/"
     }
 ]
+
+popular_repos: ['K8S','docker-containers','helm-charts','jenkins-pipeline']
+contribute_repos: ['kaelzhan/kaelzhan.github.io']
