@@ -44,12 +44,11 @@
 </section>
 {% endif %}
 
-
+<h5>POPULAR REPOSITORIES Repositories</h5>
 {% assign repos = site.github.public_repositories | reverse%}
 {% for repo in repos %}
 {% if site.popular_repos contains repo.name %}
 <section class="repo-card">
-    <h5>Popular Repositories</h5>
     <a href="{{ repo.html_url }}" target="_blank">
         <div class="repo-card-image geopattern" data-pattern-id="{{ repo.name | truncate: 9,'' }}">
             <h3 class="repo-card-title">{{ repo.name }}</h3>
