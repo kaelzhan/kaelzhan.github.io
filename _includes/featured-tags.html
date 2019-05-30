@@ -8,9 +8,7 @@
 </script>
 
 <section>
-    {% if !include.bottom %}
-    <hr class="hidden-sm hidden-xs">
-    {% endif %}
+    <hr>
     <div class="boxed-group flush" role="navigation">
         <h5><a href="{{'/search/?q=' | prepend: site.baseurl }}">SEARCH SITE CONTENT</a></h5>
         <ul class="boxed-group-inner search-form" style="padding-inline-start: 0px;">
@@ -26,7 +24,6 @@
     <hr>
     <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
     <div class="tags">
-        {% capture tags %}
         {% comment %}
             there must be no space between for and if otherwise this tricky sort won't work.
             url_encode/decode is for escaping otherwise extra link will get generated
@@ -38,8 +35,6 @@
                     title="{{ tag[0] }}"
                     rel="{{ tag[1].size }}">{{ tag[0] }}</a>
         {% endif %}{% endfor %}
-        {% endcapture %}
-        {{ tags | split:'</a>' | sort | join:'</a>' }}
     </div>
 </section>
 {% endif %}
