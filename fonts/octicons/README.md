@@ -1,3 +1,7 @@
+---
+hide-in-nav: true
+---
+
 # Octicons!
 
 This is the [Bower][bower] package for [GitHub Octicons][octicons].
