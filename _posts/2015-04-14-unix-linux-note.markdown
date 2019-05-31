@@ -2,19 +2,19 @@
 layout:     post
 title:      "Unix/Linux 扫盲笔记"
 subtitle:   "Unix/Linux induction notes"
-date:       2015-04-14
+date:       2017-04-14
 author:     "kaelzhan"
 header-img: "img/post/default/post-bg-unix-linux.jpg"
 tags:
     - OS
     - Unix
     - Linux
+description: 了解Unix/Linux的历史与源流。
+catalog: true
 ---
 
-> This document is not completed and will be updated anytime.
 
-
-## Catagory
+# 目录
 
 1. [Unix](#unix)
 	1. [Bell Labs](#bell-labs)

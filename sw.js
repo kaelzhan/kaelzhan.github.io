@@ -1,7 +1,7 @@
 /* ===========================================================
  * sw.js
  * ===========================================================
- * Copyright 2016 @huxpro
+ * Copyright 2019 @KongQiGongYing.com
  * Licensed under Apache 2.0
  * service worker scripting
  * ========================================================== */
@@ -234,7 +234,6 @@ function sendMessageToAllClients(msg) {
  */
 function sendMessageToClientsAsync(msg) {
   // waiting for new client alive with "async" setTimeout hacking
-  // https://twitter.com/Huxpro/status/799265578443751424
   // https://jakearchibald.com/2016/service-worker-meeting-notes/#fetch-event-clients
   setTimeout(() => {
     sendMessageToAllClients(msg)
