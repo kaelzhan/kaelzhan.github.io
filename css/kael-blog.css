@@ -1927,6 +1927,8 @@ img::-moz-selection {
   color: #fff;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .repo-card-meta {
   padding: 0 8px;
