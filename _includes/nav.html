@@ -19,7 +19,6 @@
     }
     function lanChange(){
         $("#lan-sel").hide();
-        __HuxNav__.close()
     }
 </script>
 
@@ -142,5 +141,8 @@
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
+        if(e.target.id == 'lan-btn') return;
+        if(e.target.id == 'lan-sel') return;
+        __HuxNav__.close()
     })
 </script>
