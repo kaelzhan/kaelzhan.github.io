@@ -1,3 +1,28 @@
+<style>
+    #lan-btn {
+        cursor: pointer;
+    }
+    #lan-sel {
+        display: block;
+        position: absolute;
+        margin-top: 0px;
+    }
+</style>
+<!-- jQuery -->
+<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script>
+    $(document).ready(function(){
+        $("#lan-sel").hide();
+    });
+    function lanClick(){
+        $("#lan-sel").toggle();
+    }
+    function lanChange(){
+        $("#lan-sel").hide();
+        __HuxNav__.close()
+    }
+</script>
+
 <!-- Navigation -->
 {% if page.nav-style == "invert" or page.header-style == "text" %}
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
@@ -31,18 +56,17 @@
                     </li>
                     {% endif %}
                     {% endfor %}
-                    <li>
-                        <div class="lan-nav">
-                            <a class="lan-btn">Language</a>
-                            <!-- Language Selector -->
-                            <select class="lan-sel" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-                                <option value="0" selected> 中文 Chinese </option>
-                                {% if page.multilingual %}
-                                <option value="1"> 英文 English </option>
-                                {% endif %}
-                            </select>
-                        </div>
+                    <li onmouseleave="lanChange()">
+                        <a id="lan-btn" onclick="lanClick()">Language</a>
+                        <!-- Language Selector -->
+                        <select id="lan-sel" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                            <option value="0" selected> 中文 Chinese </option>
+                            {% if page.multilingual %}
+                            <option value="1"> 英文 English </option>
+                            {% endif %}
+                        </select>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -118,6 +142,5 @@
     document.addEventListener('click', function(e){
         if(e.target == $toggle) return;
         if(e.target.className == 'icon-bar') return;
-        __HuxNav__.close();
     })
 </script>
