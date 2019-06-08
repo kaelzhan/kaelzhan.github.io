@@ -22,13 +22,6 @@ Kael Zhan
 </div>
 
 
-## 资源
-
-* [我的 Github code repo](https://github.com/kaelzhan)  
-* [我的 Docker hub repo](https://cloud.docker.com/u/kaelzhan)  
-* [我的 Helm charts repo](https://raw.githubusercontent.com/kaelzhan/helm-charts/master/index.yaml)
-
-
 ## 赞赏
 如果内容对您有帮助，就买杯咖啡助我继续分享吧 (＾－＾)
 

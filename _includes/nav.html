@@ -31,6 +31,18 @@
                     </li>
                     {% endif %}
                     {% endfor %}
+                    <li>
+                        <div class="lan-nav">
+                            <a class="lan-btn">Language</a>
+                            <!-- Language Selector -->
+                            <select class="lan-sel" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                                <option value="0" selected> 中文 Chinese </option>
+                                {% if page.multilingual %}
+                                <option value="1"> 英文 English </option>
+                                {% endif %}
+                            </select>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
