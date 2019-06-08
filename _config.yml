@@ -147,5 +147,5 @@ friends: [
     }
 ]
 
-popular_repos: ['K8S','docker-containers','helm-charts','jenkins-pipeline']
+popular_repos: ['kubernetes-cluster','docker-containers','helm-charts','jenkins-pipeline']
 contribute_repos: ['kaelzhan/kaelzhan.github.io']

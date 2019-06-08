@@ -1870,9 +1870,13 @@ img::-moz-selection {
 .repo-card:hover .repo-card-body {
   opacity: 1;
 }
-.repo-card p {
+.repo-card-title p {
   display: block;
   margin: 2em 0 1em 0;
+}
+.repo-card-body p {
+  display: block;
+  margin: 1.5em 0 1em 0;
 }
 .repo-card .draft-tag {
   position: absolute;
