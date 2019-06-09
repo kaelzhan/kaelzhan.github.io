@@ -191,7 +191,7 @@ progress::-moz-progress-value {
     margin: 0 auto;
     margin-top:20px;
     margin-bottom: 10px;
-    background-image:url('https://www.kongqigongying.com/img/root/kael-icon3-512.png');
+    background-image:url('/img/root/kael-icon3-512.png');
     background-size: 120%;
     background-position:center;
     border-radius:50%;
