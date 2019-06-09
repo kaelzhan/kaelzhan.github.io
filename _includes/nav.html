@@ -8,19 +8,6 @@
         margin-top: 0px;
     }
 </style>
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-<script>
-    $(document).ready(function(){
-        $("#lan-sel").hide();
-    });
-    function lanClick(){
-        $("#lan-sel").toggle();
-    }
-    function lanChange(){
-        $("#lan-sel").hide();
-    }
-</script>
 
 <!-- Navigation -->
 {% if page.nav-style == "invert" or page.header-style == "text" %}
@@ -48,21 +35,25 @@
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
                     </li>
-                    {% for page in site.pages %}
-                    {% if page.title and page.hide-in-nav != true %}
                     <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        <a href="{{ '/archive' | prepend: site.baseurl }}">Archive</a>
                     </li>
-                    {% endif %}
-                    {% endfor %}
+                    <li>
+                        <a href="{{ '/share' | prepend: site.baseurl }}">Share</a>
+                    </li>
+                    <li>
+                        <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+                    </li>
+                    <li>
+                        <a href="{{ '/resume' | prepend: site.baseurl }}">Resume</a>
+                    </li>
+
                     <li onmouseleave="lanChange()">
                         <a id="lan-btn" onclick="lanClick()">Language</a>
                         <!-- Language Selector -->
                         <select id="lan-sel" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-                            <option value="0" selected> 中文 Chinese </option>
-                            {% if page.multilingual %}
+                            <option value="0"> 中文 Chinese </option>
                             <option value="1"> 英文 English </option>
-                            {% endif %}
                         </select>
                     </li>
 
@@ -91,6 +82,9 @@
             </div>
         </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
 <script>
     // Drop Bootstarp low-performance Navbar
@@ -145,4 +139,26 @@
         if(e.target.id == 'lan-sel') return;
         __HuxNav__.close()
     })
+
+    $(document).ready(function(){
+        $("#lan-sel").hide();
+    });
+    function lanClick(){
+        $("#lan-sel").toggle();
+    }
+    function lanChange(){
+        $("#lan-sel").hide();
+    }
+    $(function() {
+        if (localStorage.getItem('lan-sel')) {
+            $("#lan-sel option").eq(localStorage.getItem('lan-sel')).prop('selected', true);
+        }
+
+        $("#lan-sel").on('change', function() {
+            localStorage.setItem('lan-sel', $('option:selected', this).index());
+        });
+
+        onLanChange( $('#lan-sel option:selected').val() );
+    });
+
 </script>

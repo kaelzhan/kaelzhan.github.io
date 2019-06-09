@@ -71,7 +71,7 @@ simple_jekyll_search:
     limit: 10
 
 # Disqus settings
-disqus_username: kongqigongying.com
+disqus_username:
 
 # Netease settings
 netease_comment: false
