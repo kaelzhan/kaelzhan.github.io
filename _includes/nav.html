@@ -35,6 +35,7 @@
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
                     </li>
+                    {% if page.title != "Resume" %}
                     <li>
                         <a href="{{ '/archive' | prepend: site.baseurl }}">Archive</a>
                     </li>
@@ -47,6 +48,7 @@
                     <li>
                         <a href="{{ '/resume' | prepend: site.baseurl }}">Resume</a>
                     </li>
+                    {% endif %}
 
                     <li onmouseleave="lanChange()">
                         <a id="lan-btn" onclick="lanClick()">Language</a>

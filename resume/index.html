@@ -1,13 +1,29 @@
 ---
-layout: resume
+layout: default
 title: "Resume"
 description: "个人在线简历。"
 multilingual: true
 ---
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
 <!-- Chinese Version -->
-<div class="zh post-container">
+<div class="zh">
     {% capture resume_zh %}{% include resume/zh.html %}{% endcapture %}
     {{ resume_zh }}
 </div>
 
+
+<!-- English Version -->
+<div class="en">
+    {% capture resume_en %}{% include resume/en.html %}{% endcapture %}
+    {{ resume_en }}
+</div>

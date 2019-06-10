@@ -975,6 +975,9 @@ samp {
   }
 }
 .intro-header {
+  padding: 120px 0 80px;
+}
+.intro-header {
   background: no-repeat center center;
   background-color: #cccccc;
   background-attachment: scroll;
