@@ -468,16 +468,10 @@ samp {
 .intro-header {
   &.style-text {
     background: none;
-    .site-heading {
-      padding: 240px 0 150px;
-      color: @gray-dark;
-      .subheading{
-        margin-bottom: 15px;
-      }
-    }
+    .site-heading,
     .post-heading,
     .page-heading {
-      padding: 160px 0 60px;
+      padding: 100px 0 20px;
       color: @gray-dark;
       .subheading{
         margin-bottom: 15px;
@@ -503,42 +497,31 @@ samp {
   @media only screen and (min-width: 768px) {
     margin-bottom: 20px; /* response on desktop */
   }
-  .site-heading {
-    padding: 240px 0 150px;
+
+  .post-heading{
+    padding: 120px 0 80px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 240px 0 150px;
-    }
-  }
-  .post-heading,
-  .page-heading {
-    padding: 160px 0 60px;
-    color: white;
-    @media only screen and (min-width: 768px) {
-      padding: 160px 0 60px;
+      padding: 180px 0 180px;
     }
   }
   // masterialize
-  .site-heading {
-    padding: 240px 0 150px;
+  .site-heading,
+  .page-heading{
+    padding: 150px 0 100px;
+    color: white;
     @media only screen and (min-width: 768px) {
-      padding: 240px 0 150px;
+      padding: 240px 0 160px;
     }
   }
-  .site-heading {
+  .site-heading,
+  .page-heading {
     text-align: center;
     h1 {
       margin-top: 40px;
       margin-bottom: 20px;
-      font-size: 40px;
-      font-weight: 800;
-    }
-  }
-  .page-heading {
-    text-align: center;
-    h1 {
-      margin-top: 20px;
       font-size: 50px;
+      font-weight: 800;
     }
     .subheading {
       .sans-serif;
