@@ -24,6 +24,4 @@ Kael Zhan
 
 ## 赞赏
 如果内容对您有帮助，就买杯咖啡助我继续分享吧 (＾－＾)
-
-
-<div align="left"><img src="/img/root/kaelzanshang.png" /></div>
+<div align="left"><img src="/img/root/root-kael-zsm300.png" /></div>
