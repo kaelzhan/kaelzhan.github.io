@@ -3,7 +3,7 @@ layout: post
 title: Helm Client 与 Tiller Server 安装
 subtitle: "Installation of Helm client and Tiller Server to manage Kubernetes apps."
 author: "kaelzhan"
-header-img: "img/post/default/post-bg-microservice.jpg"
+header-img: "img/home/bg-arrows.jpg"
 header-mask: 0.3
 mathjax: true
 date: 2019-05-19
