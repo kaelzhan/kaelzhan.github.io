@@ -975,9 +975,6 @@ samp {
   }
 }
 .intro-header {
-  padding: 120px 0 80px;
-}
-.intro-header {
   background: no-repeat center center;
   background-color: #cccccc;
   background-attachment: scroll;
@@ -992,7 +989,7 @@ samp {
   background: none;
 }
 .intro-header.style-text .site-heading {
-  padding: 120px 0 20px;
+  padding: 240px 0 150px;
   color: #404040;
 }
 .intro-header.style-text .site-heading .subheading {
@@ -1000,7 +997,7 @@ samp {
 }
 .intro-header.style-text .post-heading,
 .intro-header.style-text .page-heading {
-  padding: 85px 0 20px;
+  padding: 160px 0 60px;
   color: #404040;
 }
 .intro-header.style-text .post-heading .subheading,
@@ -1025,38 +1022,39 @@ samp {
   }
 }
 .intro-header .site-heading {
-  padding: 120px 0 55px;
+  padding: 240px 0 150px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
-    padding: 150px 0;
+    padding: 240px 0 150px;
   }
 }
 .intro-header .post-heading,
 .intro-header .page-heading {
-  padding: 85px 0 55px;
+  padding: 160px 0 60px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 160px 0 60px;
   }
 }
 .intro-header .site-heading {
-  padding: 95px 0 70px;
+  padding: 240px 0 150px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
-    padding: 150px 0;
+    padding: 240px 0 150px;
   }
 }
 .intro-header .site-heading {
   text-align: center;
 }
 .intro-header .site-heading h1 {
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 40px;
   font-weight: 800;
 }
@@ -1064,7 +1062,7 @@ samp {
   text-align: center;
 }
 .intro-header .page-heading h1 {
-  margin-top: 0;
+  margin-top: 20px;
   font-size: 50px;
 }
 .intro-header .page-heading .subheading {
@@ -1429,12 +1427,12 @@ img::-moz-selection {
     margin-right: 5px;
   }
 }
-#tag-heading {
+#short-heading {
   margin: 50px 0 50px 0;
   padding: 60px 0 40px;
 }
 @media only screen and (min-width: 768px) {
-  #tag-heading {
+  #short-heading {
     padding: 55px 0;
   }
 }
@@ -1633,7 +1631,7 @@ img::-moz-selection {
   width: 100%;
   height: 100%;
 }
-.page-fullscreen #tag-heading {
+.page-fullscreen #short-heading {
   position: fixed;
   left: 0;
   top: 0;
