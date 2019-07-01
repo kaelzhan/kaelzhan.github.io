@@ -160,3 +160,43 @@ checkList(weightList0, valueList0, 0, 0)
    
 print(max(result))
 ```
+
+## 解法2改进
+
+解法2也还能改进，当总重量达到背包上限的时候就可以结束当次循环，减少运算量。
+
+```python
+import sys
+import copy
+
+inputStr1 = sys.stdin.readline().strip()
+inputStr2 = sys.stdin.readline().strip()
+inputNum = int(input())
+
+valueList0 = inputStr1.split(',')
+weightList0 = inputStr2.split(',')
+
+result = []
+
+def checkList(weightList, valueList, weight, value):
+    if len(weightList) == 0:
+        result.append(value)
+        return
+
+    for i in range(len(weightList)):
+        weightList1 = copy.deepcopy(weightList)
+        valueList1 = copy.deepcopy(valueList)
+        weight1 = copy.deepcopy(weight)
+        value1 = copy.deepcopy(value)  
+
+        weight1 = weight1 + int(weightList1.pop(i))
+        if weight1 > inputNum:
+            result.append(value)
+            continue
+        value1 = value1 + int(valueList1.pop(i))
+        checkList(weightList1, valueList1, weight1, value1)
+        
+checkList(weightList0, valueList0, 0, 0)
+   
+print(max(result))
+```
