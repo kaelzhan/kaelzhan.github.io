@@ -1,6 +1,10 @@
 
 #### Program
 
+##### Exercise
+- [牛客网](https://www.nowcoder.com/) - 编程刷题与上机测试
+- [力扣](https://leetcode-cn.com/) - leetcode刷题
+
 ##### Go
 - [BeeGo](https://beego.me/docs/intro/) - Go web开发框架
 
