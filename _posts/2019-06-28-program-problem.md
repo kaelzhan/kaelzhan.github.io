@@ -135,8 +135,10 @@ inputStr1 = sys.stdin.readline().strip()
 inputStr2 = sys.stdin.readline().strip()
 inputNum = int(input())
 
-valueList0 = inputStr1.split(',')
-weightList0 = inputStr2.split(',')
+valueList = inputStr1.split(',')
+weightList = inputStr2.split(',')
+valueList0 = [int(i) for i in valueList]
+weightList0 = [int(i) for i in weightList]
 
 result = []
 
@@ -151,9 +153,9 @@ def checkList(weightList, valueList, weight, value):
         weight1 = copy.deepcopy(weight)
         value1 = copy.deepcopy(value)  
 
-        weight1 = weight1 + int(weightList1.pop(i))
+        weight1 = weight1 + weightList1.pop(i)
         if weight1 <= inputNum:
-            value1 = value1 + int(valueList1.pop(i))
+            value1 = value1 + valueList1.pop(i)
         checkList(weightList1, valueList1, weight1, value1)
         
 checkList(weightList0, valueList0, 0, 0)
@@ -161,20 +163,26 @@ checkList(weightList0, valueList0, 0, 0)
 print(max(result))
 ```
 
-## 解法2改进
+## 解法2改进1
 
 解法2也还能改进，当总重量达到背包上限的时候就可以结束当次循环，减少运算量。
+我们可以获取程序具体运行时间来检测改进的效果。
 
 ```python
 import sys
 import copy
+import time
 
 inputStr1 = sys.stdin.readline().strip()
 inputStr2 = sys.stdin.readline().strip()
 inputNum = int(input())
 
-valueList0 = inputStr1.split(',')
-weightList0 = inputStr2.split(',')
+start = time.clock()
+
+valueList = inputStr1.split(',')
+weightList = inputStr2.split(',')
+valueList0 = [int(i) for i in valueList]
+weightList0 = [int(i) for i in weightList]
 
 result = []
 
@@ -189,14 +197,128 @@ def checkList(weightList, valueList, weight, value):
         weight1 = copy.deepcopy(weight)
         value1 = copy.deepcopy(value)  
 
-        weight1 = weight1 + int(weightList1.pop(i))
+        weight1 = weight1 + weightList1.pop(i)
         if weight1 > inputNum:
             result.append(value)
             continue
-        value1 = value1 + int(valueList1.pop(i))
+        value1 = value1 + valueList1.pop(i)
         checkList(weightList1, valueList1, weight1, value1)
         
 checkList(weightList0, valueList0, 0, 0)
    
 print(max(result))
+
+end = time.clock()
+print("Runtime is ：", end - start) 
+```
+
+## 解法2改进2
+
+并且当我们递归挑选宝石的时候，可以排除掉我们当前挑选的那颗宝石之前的宝石，
+因为那些挑选方法，在前面我们选择过之前宝石的时候已经得出过结果。
+
+```python
+import sys
+import copy
+import time
+
+inputStr1 = sys.stdin.readline().strip()
+inputStr2 = sys.stdin.readline().strip()
+inputNum = int(input())
+
+start = time.clock()
+
+valueList = inputStr1.split(',')
+weightList = inputStr2.split(',')
+valueList0 = [int(i) for i in valueList]
+weightList0 = [int(i) for i in weightList]
+
+result = []
+
+def checkList(weightList, valueList, weight, value):
+    if len(weightList) == 0:
+        result.append(value)
+        return
+
+    for i in range(len(weightList)):
+
+        weightList1 = copy.deepcopy(weightList)
+        valueList1 = copy.deepcopy(valueList)
+        weight1 = copy.deepcopy(weight)
+        value1 = copy.deepcopy(value) 
+
+        for toRemove in range(i): 
+            weightList1.pop(0)
+            valueList1.pop(0)
+
+        weight1 = weight1 + weightList1.pop(0)
+        if weight1 > inputNum:
+            result.append(value)
+            continue
+        value1 = value1 + valueList1.pop(0)
+        checkList(weightList1, valueList1, weight1, value1)
+        
+checkList(weightList0, valueList0, 0, 0)
+   
+print(max(result))
+
+end = time.clock()
+print("Runtime is ：", end - start) 
+```
+
+## 解法2改进3
+
+另外，如果从某一个元素开始，总重量已经小于背包大小，那么可以直接跳过接下来的步骤得出最大价值。
+
+```python
+import sys
+import copy
+import time
+
+inputStr1 = sys.stdin.readline().strip()
+inputStr2 = sys.stdin.readline().strip()
+inputNum = int(input())
+
+start = time.clock()
+
+valueList = inputStr1.split(',')
+weightList = inputStr2.split(',')
+valueList0 = [int(i) for i in valueList]
+weightList0 = [int(i) for i in weightList]
+
+result = []
+
+def checkList(weightList, valueList, weight, value):
+    if len(weightList) == 0:
+        result.append(value)
+        return
+
+    for i in range(len(weightList)):
+
+        weightList1 = copy.deepcopy(weightList)
+        valueList1 = copy.deepcopy(valueList)
+        weight1 = copy.deepcopy(weight)
+        value1 = copy.deepcopy(value) 
+
+        if weight + sum(weightList1[i:]) <= inputNum:
+            result.append(value + sum(valueList1[i:]))
+            break 
+
+        for toRemove in range(i): 
+            weightList1.pop(0)
+            valueList1.pop(0)
+
+        weight1 = weight1 + weightList1.pop(0)
+        if weight1 > inputNum:
+            result.append(value)
+            continue
+        value1 = value1 + valueList1.pop(0)
+        checkList(weightList1, valueList1, weight1, value1)
+        
+checkList(weightList0, valueList0, 0, 0)
+   
+print(max(result))
+
+end = time.clock()
+print("Runtime is ：", end - start) 
 ```
