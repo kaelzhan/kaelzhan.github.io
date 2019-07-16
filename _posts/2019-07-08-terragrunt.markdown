@@ -12,12 +12,12 @@ catalog: true
 ---
 
 
-In 2016, we released an open source tool called Terragrunt as a stopgap solution for two problems in Terraform:
+In 2016, an open source tool called Terragrunt released as a stopgap solution for two problems in Terraform:
 (1) the lack of locking for Terraform state and  
 (2) the lack of a way to configure your Terraform state as code.  
-Over the next few years, we were happy to see our solutions for both of these problems integrated into Terraform itself (in the form of Terraform backends), but new problems have since cropped up: namely, how to keep your Terraform code DRY and maintainable.
+Over the next few years, the solutions for both of above problems integrated into Terraform itself (in the form of Terraform backends), but new problems have since cropped up: namely, how to keep the Terraform code DRY and maintainable.
 
-We just released Terragrunt v0.19.0, which has been updated to work with Terraform 0.12 and HCL2, and in this blog post, I’ll go over a few of the ways Terragrunt helps you in 2019:
+Then a new version Terragrunt v0.19.0 released, which has been updated to work with Terraform 0.12 and HCL2, and in this blog post, I’ll go over a few of the ways Terragrunt helps you in 2019:
 
 * Keep your backend configuration DRY
 * Keep your Terraform CLI arguments DRY
@@ -395,7 +395,7 @@ If at any point you hit a problem, it will only affect the one environment, and 
 ## Try it out!
 This has been a brief introduction to Terragrunt and a few of the reasons to use it in 2019. Check out the [Terragrunt documentation](https://github.com/gruntwork-io/terragrunt) for much more detail of what you can do.  
 
-We believe Terragrunt currently offers the best way to achieve DRY, maintainable, immutable Terraform code. We hope that, over time, all Terragrunt features will be rolled into Terraform, but in the meantime, give Terragrunt a shot as a stop gap solution, and let us know how it works out for you!  
+Terragrunt currently offers the best way to achieve DRY, maintainable, immutable Terraform code. Maybe, over time, all Terragrunt features will be rolled into Terraform.
 
 Your entire infrastructure. Defined as code. In about a day. [Gruntwork.io](https://gruntwork.io/?ref=blog-terragrunt-2019).
 
