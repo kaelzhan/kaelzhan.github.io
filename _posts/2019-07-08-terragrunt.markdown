@@ -12,7 +12,7 @@ catalog: true
 ---
 
 
-In 2016, an open source tool called Terragrunt released as a stopgap solution for two problems in Terraform:
+In 2016, an open source tool called Terragrunt released as a stopgap solution for two problems in Terraform:  
 (1) the lack of locking for Terraform state and  
 (2) the lack of a way to configure your Terraform state as code.  
 Over the next few years, the solutions for both of above problems integrated into Terraform itself (in the form of Terraform backends), but new problems have since cropped up: namely, how to keep the Terraform code DRY and maintainable.
