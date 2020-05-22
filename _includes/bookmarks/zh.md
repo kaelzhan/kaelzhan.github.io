@@ -5,8 +5,17 @@
 - [牛客网](https://www.nowcoder.com/) - 编程刷题与上机测试
 - [力扣](https://leetcode-cn.com/) - leetcode刷题
 
+##### Python
+- [Python-100-days](https://github.com/jackfrued/Python-100-Days) - Python 从新手到大师
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Flask web开发框架
+
 ##### Go
+- [Go-100-days](https://github.com/rubyhan1314/Golang-100-Days) - Golang 从新手到大师
 - [BeeGo](https://beego.me/docs/intro/) - Go web开发框架
+
+##### Ruby
+- [Ruby.on-page](http://ruby.on-page.net/) - Ruby 手册
+- [Ruby on rails](https://guides.rubyonrails.org/index.html) - Ruby on rails web开发框架
 
 ##### PHP
 - [Slim](https://github.com/codeguy/Slim) - PHP微框架，简单易用易拓展。
