@@ -1,9 +1,11 @@
 
-#### Program
+### Program
 
-##### Exercise
+#### Exercise
 - [牛客网](https://www.nowcoder.com/) - 编程刷题与上机测试
 - [力扣](https://leetcode-cn.com/) - leetcode刷题
+
+#### Back-end
 
 ##### Python
 - [Python-100-days](https://github.com/jackfrued/Python-100-Days) - Python 从新手到大师
@@ -35,14 +37,11 @@
 - [laravel-shopping-cart](https://github.com/overtrue/laravel-shopping-cart) - Laravel 购物车，简单方便,文档齐全。
 - [laravel-lang](https://github.com/overtrue/laravel-lang) - Laravel 语言包，支持 44+ 种语言。
 - [Laravel-MongoDB](https://github.com/jenssegers/Laravel-MongoDB) - Laravel 的 MongoDB 数据库组件
-- [laravel-pinyin](https://github.com/overtrue/laravel-pinyin) - Laravel 的中文转拼音插件，基于[overtrue/pinyin](https://github.com/overtrue/pinyin)
 - [laravel-wechat](https://github.com/overtrue/laravel-wechat) - Laravel 的微信开发组件，基于[overtrue/wechat](https://github.com/overtrue/wechat)
 - [Laravel Push Notification](https://github.com/davibennun/laravel-push-notification) - Laravel 推送工具。
 
-
-##### Front-end
-###### Javascript
-- [phpjs](http://phpjs.org/) - PHP函数的js实现。
+#### Front-end
+##### Javascript
 - [string.js](https://github.com/jprichardson/string.js) - 轻量级(<5kb)的JavaScript字符串操作库，强大的字符串处理API。
 - [underscore](https://github.com/jashkenas/underscore) - 强大的js函数库，提供超多易用的封装。
 - [readmore.js](http://jedfoster.com/Readmore.js) -  隐藏过长的文章。按高度隐藏的，如果担心Feed流里边因为某篇文章特别长，影响浏览时可以用上。支持bower，install readmore 即可。
@@ -51,89 +50,58 @@
 - [SideComments.js](http://aroc.github.io/side-comments-demo/) - 类似Medium.com的文本边栏评论插件。
 - [Github.js](https://github.com/michael/github) - GitHub API js版本。
 - [Moment.js](https://github.com/moment/moment) - 提供在JavaScript中分析，验证，操作和显示日期的API。
-- [cheerio](https://github.com/cheeriojs/cheerio) - 专为服务器端设计的，快速，灵活，精益的jQuery核心功能实现。
 - [markdown-js](https://github.com/evilstreak/markdown-js) - JavaScript Mardown 解析器。
-- [Spin.js](https://github.com/fgnass/spin.js) - “加载中” 动画生成工具。
-- [emojify.js](https://github.com/hassankhan/emojify.js) - 超简单的让你的网页支持emoji表情。
-- [fengyuanchen/distpicker](https://github.com/fengyuanchen/distpicker) - 中国省市区三级联动，强大的自定义功能。
 
-###### Tables
+##### CSS
+- [typo.css](https://github.com/sofish/typo.css) - 中文网页重设与排版，一致化浏览器排版效果，构建最适合中文阅读的网页排版。
+
+##### Tables
 - [switchery](https://github.com/abpetkov/switchery) - IOS7风格的checkbox美化插件，demo: http://abpetkov.github.io/switchery/。
 - [chosen](https://github.com/harvesthq/chosen) - 下拉框美化强化插件，demo: http://harvesthq.github.io/chosen/。
 - [formatter.js](https://github.com/firstopinion/formatter.js) - 强大输入框格式化插件，指定输入框可输入的格式。
 - [iCheck](https://github.com/fronteed/iCheck) - 高度可定制的复选框和单选按钮 (jQuery & Zepto)。
 
-###### CSS
-- [typo.css](https://github.com/sofish/typo.css) - 中文网页重设与排版，一致化浏览器排版效果，构建最适合中文阅读的网页排版。
 
-
-
-#### Tools
-##### Server
+### Tools
+#### Server
 - [H2O](https://github.com/kazuho/h2o) - 比nginx快2倍的web服务器。
 - [Atlas](https://github.com/Qihoo360/Atlas) - 基于MySQL协议的数据库中间层项目。
 - [icomet](https://github.com/ideawu/icomet) - 一个支持百万并发连接的comet服务器：icomet。
 - [node-webkit](https://github.com/rogerwang/node-webkit) -基于chromium和nodejs的应用，允许你使用html+javascript开发桌面应用。
 - [ionic](http://ionicframework.com/) - 混合应用开发框架，使用html+javascript+css创建Android与IOS应用。
 
+#### Terminal Tools
+- [HTTPie](https://github.com/jakubroztocil/httpie) - 终端网页客户端, 命令行下的http/https请求模拟器。
 
-##### Write Tools
+#### Write Tools
 - [marked](https://github.com/chjj/marked) - 一个高效的Markdown分析器和编译器。
 - [StackEdit](https://github.com/benweet/stackedit) - 强大的在线Markdown编辑器，在线地址：https://stackedit.io/。
 - [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) - 转换PDF为Html。
 - [highlightjs](https://highlightjs.org/) - 代码高亮。
 
-##### Web Tools
+#### Web Tools
 - [FIS](https://github.com/fex-team/fis) - Front-end Integrated Solution - 前端集成解决方案。
 - [JavaScript的远程Web控制台](https://github.com/nkashyap/console.io) - Console.IO是一个NodeJS项目。它为网站和Web应用程序提供的远程Web控制台。它采用express.io（express和socket.io）提供用户实时体验。  它能工作在几乎所有的现代浏览器，移动设备，智能电视等平台。
 - [CSS3动画生成工具](http://ecd.tencent.com/css3/tools.html) - 在线制作&预览CSS3动画。
 
-##### Sublime Plugins
-- [Spacegray](https://github.com/kkga/spacegray) - 特别漂亮的Sublime Text主题，建议与`Monaco`字体配合使用。
-- [Colorsublime](http://colorsublime.com/) - 超多Sublime Text主题。
-- [Alignment](http://wbond.net/sublime_packages/alignment) - 代码对齐工具，根据=号对齐以及其它定义的符号竖向对齐你的代码。
-- [EncodingHelper](https://github.com/SublimeText/EncodingHelper) - 在状态栏显示当前文件的编码，支持从其它编码转为UTF-8。
-- [SideBarEnhancement](https://github.com/titoBouzout/SideBarEnhancements) - 边栏菜单增强工具。
-- [Tag](https://github.com/sublimetext/tag) - html标签助手。
-- [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete) - 在当前打开的文件中提示函数，方法名等。
-- [DocBlockr](https://github.com/spadgos/sublime-jsdocs) - 自动注释工具。
-- [Pretty JSON](https://github.com/dzhibas/SublimePrettyJson) - json格式化工具，快捷键：OSX: cmd+ctl+j, win: ctl+alt+j。
-- [ColorPicker](http://weslly.github.io/ColorPicker/) - 直接在sublime里调用调色板的工具。
-- [Emmet](http://ipestov.com/the-best-plugins-for-sublime-text/) - 高效编写HTML的工具，原zen-coding。
-- [AutoFileName](https://github.com/BoundInCode/AutoFileName) - 自动完成路径的文件 - 非常方便。
-- [Git](https://github.com/kemayo/sublime-text-git) - 顾名思义。
-- [GitGutter](https://github.com/jisaacks/GitGutter) - 在边栏高亮你的文件内容变动，增加，删除，修改，类似git diff一样的效果。
-- [Modific](https://github.com/gornostal/Modific) - 与上一个插件基本一样。
-- [Sublimall](https://sublimall.org/) - 免费的Sublime备份与同步工具，只需要一个账户，你的插件，配置，打开的文件等都会自动同步。
-- [MarkdownEditing](https://github.com/ttscoff/MarkdownEditing) - Markdown编写的最好插件：语法高亮，缩写，自动完成，配色方案等
-- [Sublime SFTP](http://wbond.net/sublime_packages/sftp) - SFTP工具。
-- [CTags](https://github.com/SublimeText/CTags) - 自动提示工具。
-- [SublimeLinter](http://github.com/SublimeLinter/SublimeLinter) - 语法检测工具，支持： C/C++, Java, Python, PHP, JS, HTML, CSS等。
-- [CSScomb](https://github.com/csscomb/sublime-csscomb) - CSS编码风格格式化工具。
-- [FixMyJS](https://github.com/jshint/fixmyjs), [Jsfmt](https://github.com/paulirish/sublime-jsfmt) 与 [JsFormat](https://github.com/jdc0589/JsFormat) - Js/JSON编码风格格式化工具
-- [AStyleFormatter](https://github.com/timonwong/SublimeAStyleFormatter) - C/C++/C#/Java 编码风格格式化工具
-- [SVG-Snippets](https://github.com/jorgeatgu/SVG-Snippets) - 设置自定义SVG片段。
-- [Inc-Dec-Value](https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value) - 数字，日期，十六进制颜色值等的递增/递减.
-
-##### Chrome Plugins
+#### Chrome Plugins
 - [私人珍藏的Chrome插件，吐血推荐](http://stormzhang.com/devtools/2016/01/15/google-chrome-extension/) - 熟练使用这些插件，会对你的开发效率大大提高，逼格瞬间上升一个档次。
 
-#### Resources
-##### Standards
+### Resources
+#### Standards
 - [开源项目目录规范](https://github.com/fex-team/styleguide/blob/master/project.md)
 - [JavaScript编码规范](https://github.com/fex-team/styleguide/blob/master/javascript.md)
 - [CSS 编码规范](https://github.com/fex-team/styleguide/blob/master/css.md)
 - [HTML 编码规范](https://github.com/fex-team/styleguide/blob/master/html.md)
 - [Markdown 编写规范](https://github.com/fex-team/styleguide/blob/master/markdown.md)
 
-##### Books And Courses
+#### Books And Courses
 - [《The Swift Programming Language》](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版 Apple 官方 Swift 教程。
 - [《程序员编程艺术 — 面试和算法心得》](https://github.com/julycoding/The-Art-Of-Programming-By-July) - CSDN 600万博客结构之法算法之道部分经典博文优化版。
 - [RESTful API 接口设计指北](https://github.com/bolasblack/api-guide) - 不错的API设计教程。
 - [GitHub秘籍](https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md) - GitHub秘籍
 
-
-##### Icons
+#### Icons
 - [ionicons](https://github.com/driftyco/ionicons) - ionic图标。
 - [emoji查询](http://emoji.muan.co/),[emoji-cheat-sheet](http://www.emoji-cheat-sheet.com/) - emoji查询。
 
