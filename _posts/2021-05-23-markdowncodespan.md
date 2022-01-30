@@ -4,7 +4,7 @@ title: Markdown 代码块与语法高亮
 subtitle: "Markdown code block and Syntax highlighting."
 author: "kaelzhan"
 header-img: "img/post/default/post-bg-microservice.jpg"
-date: 2019-05-23
+date: 2021-05-23
 categories: 写作
 tags: [写作,Program,Markdown]
 description: 简洁的编程式写作方式：Markdown。
@@ -13,10 +13,11 @@ catalog: true
 
 # 目录
 
-* [1. 语法说明](#1-语法说明)
-* [2. 行内式代码插入](#2-行内式代码插入)
-* [3. 多行代码插入与语法高亮](#3-多行代码插入与语法高亮)
-* [4. 缩进式多行代码插入](#4-缩进式多行代码插入)
+- [目录](#目录)
+  - [1. 语法说明](#1-语法说明)
+  - [2. 行内式代码插入](#2-行内式代码插入)
+  - [3. 多行代码插入与语法高亮](#3-多行代码插入与语法高亮)
+  - [4. 缩进式多行代码插入](#4-缩进式多行代码插入)
 
 
 ## 1. 语法说明

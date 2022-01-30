@@ -6,7 +6,7 @@ author: "kaelzhan"
 header-img: "img/home/bg-2019.jpg"
 header-mask: 0.3
 mathjax: true
-date: 2020-06-23
+date: 2022-01-30
 categories: DB
 tags: [Database,Postgresql,Mysql]
 description: The difference between Postgresql and Mysql
@@ -205,7 +205,8 @@ When creating an index, MySQL only needs to have a unique index name in the same
 
 ### About symbol
 
-PostgreSQL does not support the use of \` to wrap table names, field names, etc.
+PostgreSQL does not support the use of \` to wrap table names, field names, etc.  
+
 | Usage | MySQL | PostgreSQL | comments |
 |:--|:--|:--|:--|
 | Comment | # | -- | MySQL accepts nonstandard # to begin a comment line; PostgreSQL uses ANSI standard double dash; use the ANSI standard, both databases understand it. (However, MySQL requires a space after --, whilst it is not mandatory in PostgreSQL) |
